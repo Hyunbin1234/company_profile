@@ -1,248 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Company Profile Samsung Website</title>
-    <link rel="icon" href="img/banner-removebg-preview.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="icon" href="img/banner-removebg-preview.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-<body>
-    <header>
-        <div class="main">
-            <div class="Logo">
-                <img src="img/banner-removebg-preview.png">
-            </div>
+  </head>
 
-            <div class="buttom-a">
-                <ul>
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#broduk">Broduk</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contack">Contack</a></li>
-                </ul>
-            </div>
+  <body>
+    <nav>
+      <div class="logo">
+          <button><img src="img/samsung-removebg-preview.png" alt="" width="70%"></h1></button>
+      </div>
+      <ul id="menuList">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">Contact</a></li>
+      </ul>
+      <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+      </div>
+  </nav>
 
-        </div>
-    </header>
-    <!-- <section class="hero">
-        <img src="img/How_Samsung_Marketiang_Strategy_Solidifies_Its_Brand_Value.avif">
-    </section> -->
 
+  <script>
+      let menuList = document.getElementById("menuList")
+      menuList.style.maxHeight = "0px";
+
+      function toggleMenu(){
+          if(menuList.style.maxHeight == "0px")
+          {
+              menuList.style.maxHeight = "300px";
+          }
+          else{
+              menuList.style.maxHeight = "0px";
+          }
+      }
+      
+  </script>
+  <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+
+    <section class="welcome">
+      <div class="welcome-box">
+        <img src="img/samsung.png" alt="" width= 100%">
+      </div>
+    </section>
+ <br>
+ <br>
     <section class="Broduk" id="broduk">
-        <div class="Broduk-box">
-            <img src="img/samsung-removebg-preview.png" alt="">
-        </div>
+      <div class="Broduk-box">
+        <img src="img/samsung-removebg-preview.png" alt="" />
+      </div>
 
-        <div class="slider">
-            <div class="list">
-                <div class="item">
-                    <img src="img/023802200_1662440383-Samsung_US_ads.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img src="img/20240711-Samsung-M54-5G.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img src="img/Samsung-Galaxy-S23-Ultra-5G.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img src="img/images (3).jpeg" alt="">
-                </div>
-                <div class="item">
-                    <img src="img/5f5a1c64b92c2ee9298b4567_socmed.jpg" alt="">
-                </div>
-            </div>
+      <div class="slider">
+        <div class="list">
+          <div class="item">
+            <img src="img/023802200_1662440383-Samsung_US_ads.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/20240711-Samsung-M54-5G.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/Samsung-Galaxy-S23-Ultra-5G.jpg" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/images (3).jpeg" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/5f5a1c64b92c2ee9298b4567_socmed.jpg" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
     <div class="buttons">
-        <button id="prev">
-            << <button id="next">>>
-        </button>
-    </div>
-    <ul class="dots">
-        <li class="active"></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+      <button id="prev"><<</button>
+      <button id="next">>></button>
     </div>
     <div class="text-slide">
-        <p>삼성은 1983년에 설립된 회사입니다. 한국에서 처음 설립되었습니다. 만들어진 제품은 거의 70년 동안 생산해온 전자제품이다. 삼성은 다음과 같은 다양한 제품을 생산하는 전자 회사입니다.
-            스마트폰, 태블릿, 시계, 갤럭시 버드, 액세서리, TV, 가전제품, 컴퓨팅, 디스플레이.
-            삼성전자는 애플, 소니, HTC, 노키아 등 고객사를 대상으로 리튬이온 배터리, 반도체, 이미지 센서, 카메라 모듈, 디스플레이 등 전자부품도 생산하고 있다.
-            삼성전자는 세계 최대 전자회사로 서울 서초삼성타운에 사무실을 두고 있다. 삼성이라는 이름은 별 세 개를 뜻하는 한국어에서 유래되었습니다.</p>
-        <hr>
-        <h4>Samsung adalah perusahaan elektronik yang memproduksi berbagai macam produk, di antaranya:
-            Smartphone, Tablet, Jam tangan, Galaxy Buds, Aksesori, TV, Home appliances, Computing, Displays.
-            Samsung juga memproduksi komponen elektronik seperti baterai ion litium, semikonduktor, sensor citra, modul
-            kamera, dan layar untuk klien seperti Apple, Sony, HTC, dan Nokia.
-            Samsung merupakan perusahaan elektronik terbesar di dunia dan berkantor di Seocho Samsung Town, Seoul, Korea
-            Selatan. Nama Samsung berasal dari bahasa Korea yang berarti tiga bintang. </h4>
+      <div>
+        <p>
+          삼성은 1983년에 설립된 회사입니다. 한국에서 처음 설립되었습니다.
+          만들어진 제품은 거의 70년 동안 생산해온 전자제품이다. 삼성은 다음과
+          같은 다양한 제품을 생산하는 전자 회사입니다. 스마트폰, 태블릿, 시계,
+          갤럭시 버드, 액세서리, TV, 가전제품, 컴퓨팅, 디스플레이. 삼성전자는
+          애플, 소니, HTC, 노키아 등 고객사를 대상으로 리튬이온 배터리, 반도체,
+          이미지 센서, 카메라 모듈, 디스플레이 등 전자부품도 생산하고 있다.
+          삼성전자는 세계 최대 전자회사로 서울 서초삼성타운에 사무실을 두고
+          있다. 삼성이라는 이름은 별 세 개를 뜻하는 한국어에서 유래되었습니다.
+        </p>
+      </div>
+      <div>
+        <h4>
+          Samsung adalah perusahaan elektronik yang memproduksi berbagai macam
+          produk, di antaranya: Smartphone, Tablet, Jam tangan, Galaxy Buds,
+          Aksesori, TV, Home appliances, Computing, Displays. Samsung juga
+          memproduksi komponen elektronik seperti baterai ion litium,
+          semikonduktor, sensor citra, modul kamera, dan layar untuk klien
+          seperti Apple, Sony, HTC, dan Nokia. Samsung merupakan perusahaan
+          elektronik terbesar di dunia dan berkantor di Seocho Samsung Town,
+          Seoul, Korea Selatan. Nama Samsung berasal dari bahasa Korea yang
+          berarti tiga bintang.
+        </h4>
+      </div>
     </div>
+    <hr />
     <script src="app.js"></script>
 
     <div class="Broduk-harga">
-        <div class="img-broduk">
-            <p>삼성은 세계 최대의 전자 장치 제조 회사이며, 본사는 대한민국 서울 서초삼성타운에 위치해 있습니다. 이 회사는 한국 최대 기업이자 한국 최대 대기업인 삼성그룹의 아이콘이다.</p>
-        </div>
-        <h1>Produk Harga
-            <hr>
-            Samsung Galaxy Z Flip4 5G 8/128GB Ex-Display Resmi SEIN <Strong> Rp6.399.000 </strong>
-            <hr>
-            Samsung Galaxy Z Flip4 5G Smartphone [8GB/512GB] <strong> Rp14.999.000 </strong>
-            <hr>
-            Samsung Z flip 4 8/256 <strong> Rp14.999.000 </strong>
-            <hr>
-            SAMSUNG Z FLIP 4 GARANSI RESMI <strong> Rp13.500.000 </strong>
-        </h1>
+      <div class="img-broduk">
+        <p>
+          삼성은 세계 최대의 전자 장치 제조 회사이며, 본사는 대한민국 서울
+          서초삼성타운에 위치해 있습니다. 이 회사는 한국 최대 기업이자 한국 최대
+          대기업인 삼성그룹의 아이콘이다.
+        </p>
+      </div>
+      <h1>
+        Produk Harga
+        <hr />
+        Samsung Galaxy Z Flip4 5G 8/128GB Ex-Display Resmi SEIN
+        <strong> Rp6.399.000 </strong>
+        <hr />
+        Samsung Galaxy Z Flip4 5G Smartphone [8GB/512GB]
+        <strong> Rp14.999.000 </strong>
+        <hr />
+        Samsung Z flip 4 8/256 <strong> Rp14.999.000 </strong>
+        <hr />
+        SAMSUNG Z FLIP 4 GARANSI RESMI <strong> Rp13.500.000 </strong>
+      </h1>
     </div>
+
     <div class="broduk-box2">
-        <div class="box-img"> <img src="img/Hp-harga-mahal-Samsung-Galaxy-S23-Ultra.jpg" alt="">
-            <h1>Rp, 23.999.000</h1>
-            <h4>Samsung Galaxy S24 Ultra 제품, 공식 Android 스마트폰 보증</h4>
-        </div>
-        <div class="box-img"> <img src="img/0403_040950_c910_inilah.com_.jpg" alt="">
-            <h1>Rp, 29.591.000</h1>
-            <h4>Samsung Galaxy S24 Ultra 제품, 공식 Android 스마트폰 보증</h4>
-        </div>
-        <div class="box-img"> <img src="img/id-11134207-7r98v-lrzslfcnm02h0f.jpeg" alt="">
-            <h1>Rp, 18.199.000</h1>
-            <h4>Samsung Galaxy S24 Ultra 제품, 공식 Android 스마트폰 보증</h4>
-        </div>
+      <div class="box-img">
+        <img src="img/Hp-harga-mahal-Samsung-Galaxy-S23-Ultra.jpg" alt="" />
+        <h1>Rp, 23.999.000</h1>
+        <h4>Samsung Galaxy S24 Ultra 제품, 공식 Android 스마트폰 보증</h4>
+      </div>
+      <br />
+      <div class="box-img">
+        <img src="img/0403_040950_c910_inilah.com_.jpg" alt="" />
+        <h1>Rp, 29.591.000</h1>
+        <h4>Samsung Galaxy S24 Ultra 제품, 공식 Android 스마트폰 보증</h4>
+      </div>
+      <br />
+      <div class="box-img">
+        <img src="img/id-11134207-7r98v-lrzslfcnm02h0f.jpeg" alt="" />
+        <h1>Rp, 18.199.000</h1>
+        <h4>Samsung Galaxy S24 Ultra 제품, 공식 Android 스마트폰 보증</h4>
+      </div>
     </div>
+    <div class="textlink">
+      <p>Press this to see all phones SAMSUNG whe have.</p>
+    </div>
+    <br>
+    <div class="fullphone-link">
+      <a href="./fullphone.html">SEE MORE</a>
+
+      <div class="textlorem1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa veniam accusantium corporis, quisquam repellat vero reiciendis accusamus tenetur esse voluptatem.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, dignissimos.
+      </div>
+    </div>
+    <br>
+    <br>
+    <hr>
     <div class="text-p">
-        <p>Samsung Galaxy S24 Ultra는 Samsung 공식 보증이 적용되는 Android 스마트폰입니다. Samsung Galaxy S24 Ultra의 일부 기능은 다음과 같습니다.
-            Dynamic AMOLED 2X 화면의 크기는 6.8인치이며 새로 고침 빈도는 120Hz입니다.
-            광학 줌 기능과 AI 기술을 갖춘 200 MP 메인 카메라
-            사물이나 텍스트에 원을 그려서 정보를 검색하는 Circle to Search 기능
-            표준 에어 커맨드 메뉴 및 에어 액션을 지원하는 S펜 탑재
-            Corning Gorilla Armor로 보호되며 IP68 방수 및 방진 기능을 갖추고 있습니다.
-            45W 고속 충전을 지원하는 5000mAh 용량 배터리
-            2등급 티타늄 프레임으로 제작
-            Samsung Galaxy S24 Ultra는 2024년 1월 24일 전 세계적으로 출시되었으며, 2024년 2월 1일 인도네시아에서 출시되었습니다.</p>
+      <p>
+        Samsung Galaxy S24 Ultra는 Samsung 공식 보증이 적용되는 Android
+        스마트폰입니다. Samsung Galaxy S24 Ultra의 일부 기능은 다음과 같습니다.
+        Dynamic AMOLED 2X 화면의 크기는 6.8인치이며 새로 고침 빈도는
+        120Hz입니다. 광학 줌 기능과 AI 기술을 갖춘 200 MP 메인 카메라 사물이나
+        텍스트에 원을 그려서 정보를 검색하는 Circle to Search 기능 표준 에어
+        커맨드 메뉴 및 에어 액션을 지원하는 S펜 탑재 Corning Gorilla Armor로
+        보호되며 IP68 방수 및 방진 기능을 갖추고 있습니다. 45W 고속 충전을
+        지원하는 5000mAh 용량 배터리 2등급 티타늄 프레임으로 제작 Samsung Galaxy
+        S24 Ultra는 2024년 1월 24일 전 세계적으로 출시되었으며, 2024년 2월 1일
+        인도네시아에서 출시되었습니다.
+      </p>
     </div>
     <div class="container-about" id="about">
-        <div class="About">
-            <h1>Mengenal The CEO Samsung</h1>
-            <img src="img/about-us_companyInfo_ceo_img01_pc.avif" alt="">
-            <h2>Han, Jong Hee</h2>
-            <div class="text-about">
-                <div class="text-1">
-                    <p>ㆍWakil Ketua & CEO [2022~Sekarang]</p>
-                </div>
-                <div class="text-1">
-                    <p>ㆍWakil Ketua & Kepala, eXperience Perangkat [2021~Sekarang]</p>
-                </div>
-                <div class="text-1">
-                    <p>ㆍPresiden & Kepala, Bisnis Tampilan Visual [2017~2021]</p>
-                </div>
-                <div class="text-1">
-                    <p>ㆍKepala, Tim & Bisnis Tampilan Visual [2015~2017]</p>
-                </div>
-                <div class="text-1">
-                    <p>ㆍKepala, Kantor & Bisnis Tampilan Visual [2013~2015]</p>
-                </div>
-                <div class="text-1">
-                    <p>ㆍKepala, Tim & Produk, Bisnis Tampilan Visual [2011~2013]</p>
-                </div>
-            </div>
+      <div class="About">
+        <h1>Mengenal The CEO Samsung</h1>
+        <div class="about-img">
+          <img src="img/CEOsamsung.png" alt="" />
         </div>
-        <div class="About-text">
-            <h3>Samsung berkomitmen untuk mematuhi hukum dan peraturan setempat serta menerapkan kode etik global yang
-                ketat kepada semua karyawan. Samsung yakin bahwa manajemen etis bukan hanya alat untuk menanggapi
-                perubahan cepat dalam lingkungan bisnis global, tetapi juga sarana untuk membangun kepercayaan dengan
-                berbagai pemangku kepentingan, termasuk pelanggan, pemegang saham, karyawan, mitra bisnis, dan
-                masyarakat setempat. Dengan tujuan untuk menjadi salah satu perusahaan paling etis di dunia, Samsung
-                terus melatih karyawannya dan mengoperasikan sistem pemantauan, sekaligus mempraktikkan manajemen
-                perusahaan yang adil dan transparan. Samsung memiliki filosofi perusahaan yang lugas: mendedikasikan
-                talenta dan teknologinya untuk menciptakan produk dan layanan unggul bagi masyarakat global yang lebih
-                baik. Samsung sangat menekankan pada sumber daya manusia dan teknologinya untuk mencapai hal ini.
-                Samsung percaya bahwa mewujudkan nilai-nilai yang kuat adalah kunci untuk bisnis yang baik. Itulah
-                sebabnya nilai-nilai inti ini, dan juga kode etik yang ketat, menjiwai setiap keputusan yang diambil
-                perusahaan. Pada tahun 2005, diluncurkan “Lima Prinsip Bisnis Samsung” yang mengekspresikan kontribusi
-                Samsung Electronics sebagai pemimpin global terhadap tanggung jawab sosial perusahaan. Prinsip-prinsip
-                tersebut menjadi landasan kode etik globalnya yang sejalan dengan kewajiban hukum, etika, dan sosial
-                perusahaan.</h3>
+        <h2>Han, Jong Hee</h2>
+        <div class="text-about">
+          <div class="text-1">
+            <p>ㆍWakil Ketua & CEO [2022~Sekarang]</p>
+          </div>
+          <div class="text-1">
+            <p>ㆍWakil Ketua & Kepala, eXperience Perangkat [2021~Sekarang]</p>
+          </div>
+          <div class="text-1">
+            <p>ㆍPresiden & Kepala, Bisnis Tampilan Visual [2017~2021]</p>
+          </div>
+          <div class="text-1">
+            <p>ㆍKepala, Tim & Bisnis Tampilan Visual [2015~2017]</p>
+          </div>
+          <div class="text-1">
+            <p>ㆍKepala, Kantor & Bisnis Tampilan Visual [2013~2015]</p>
+          </div>
+          <div class="text-1">
+            <p>ㆍKepala, Tim & Produk, Bisnis Tampilan Visual [2011~2013]</p>
+          </div>
         </div>
+      </div>
     </div>
-    <hr>
+    <div class="About-text">
+      <p>
+        Samsung berkomitmen untuk mematuhi hukum dan peraturan setempat serta
+        menerapkan kode etik global yang ketat kepada semua karyawan. Samsung
+        yakin bahwa manajemen etis bukan hanya alat untuk menanggapi perubahan
+        cepat dalam lingkungan bisnis global, tetapi juga sarana untuk membangun
+        kepercayaan dengan berbagai pemangku kepentingan, termasuk pelanggan,
+        pemegang saham, karyawan, mitra bisnis, dan masyarakat setempat. Dengan
+        tujuan untuk menjadi salah satu perusahaan paling etis di dunia, Samsung
+        terus melatih karyawannya dan mengoperasikan sistem pemantauan,
+        sekaligus mempraktikkan manajemen perusahaan yang adil dan transparan.
+        Samsung memiliki filosofi perusahaan yang lugas: mendedikasikan talenta
+        dan teknologinya untuk menciptakan produk dan layanan unggul bagi
+        masyarakat global yang lebih baik. Samsung sangat menekankan pada sumber
+        daya manusia dan teknologinya untuk mencapai hal ini. Samsung percaya
+        bahwa mewujudkan nilai-nilai yang kuat adalah kunci untuk bisnis yang
+        baik. Itulah sebabnya nilai-nilai inti ini, dan juga kode etik yang
+        ketat, menjiwai setiap keputusan yang diambil perusahaan. Pada tahun
+        2005, diluncurkan “Lima Prinsip Bisnis Samsung” yang mengekspresikan
+        kontribusi Samsung Electronics sebagai pemimpin global terhadap tanggung
+        jawab sosial perusahaan. Prinsip-prinsip tersebut menjadi landasan kode
+        etik globalnya yang sejalan dengan kewajiban hukum, etika, dan sosial
+        perusahaan.
+      </p>
+    </div>
+    <hr />
     <div class="Staff">
-        <div class="profil">
-            <img src="img/org.jpg">
-            <h1>Ohdaynis</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, nulla!</p>
-        </div>
-        <div class="profil">
-            <img src="img/org-2.jpeg">
-            <h1>seanghu</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, aperiam.</p>
-        </div>
-        <div class="profil">
-            <img src="img/profil_3.jpg">
-            <h1>Jong seng</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, fugit?</p>
-        </div>
+      <div class="profil">
+        <img src="img/org.jpg" />
+        <h1>Ohdaynis</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam,
+          nulla!
+        </p>
+      </div>
+      <br />
+      <div class="profil">
+        <img src="img/org-2.jpeg" />
+        <h1>seanghu</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          aperiam.
+        </p>
+      </div>
+      <br />
+      <div class="profil">
+        <img src="img/profil_3.jpg" />
+        <h1>Jong seng</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          fugit?
+        </p>
+      </div>
     </div>
 
     <section class="Contack" id="contack">
-        <!-- CONTACT US -->
-        <div class="container-fluid pt-5 pb-5 kontak">
-            <div class="container">
-                <h2 class="display-3 text-center"><b>Contact Us</b></h2>
-                <p class="text-center">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique,
-                    eaque.
-                </p>
-                <div class="row pb-3">
-                    <div class="col-md-6">
-                        <input class="form-control form-control-lg mb-3" type="text" placeholder="Name" />
-                        <input class="form-control form-control-lg mb-3" type="text" placeholder="Email" />
-                        <input class="form-control form-control-lg mb-3" type="text" placeholder="No. Phone" />
-                    </div>
-                    <div class="col-md-6">
-                        <textarea class="form-control form-control-lg" rows="5.8" name=""></textarea>
-                    </div>
-                    <div class="col-md-3 mx-auto text-center">
-                        <a href="#home">
-                            <button type="button" class="btn btn-danger btn-lg">
-                                send message
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="container-icon">
-
-                    <div class="col-md-4 text-center tim">
-                        <div class="socisl-icon">
-                            <a href="#" class="social"
-                        ><i class="fa-brands fa-x-twitter"></i
-                            ></a>
-                            <a href="https://www.instagram.com/nizh_14/" class="social"
-                            ><i class="fa-brands fa-instagram"></i
-                                ></a>
-                  <a href="#" class="social"
+      <!-- CONTACT US -->
+      <div class="container-fluid pt-5 pb-5 kontak">
+        <div class="container">
+          <h2 class="display-3 text-center"><b>Contact Us</b></h2>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique,
+            eaque.
+          </p>
+          <div class="row pb-3">
+            <div class="col-md-6">
+              <input
+                class="form-control form-control-lg mb-3"
+                type="text"
+                placeholder="Name"
+              />
+              <input
+                class="form-control form-control-lg mb-3"
+                type="text"
+                placeholder="Email"
+              />
+              <input
+                class="form-control form-control-lg mb-3"
+                type="text"
+                placeholder="No. Phone"
+              />
+            </div>
+            <div class="col-md-6">
+              <textarea
+                class="form-control form-control-lg"
+                rows="5.8"
+                name=""
+              ></textarea>
+            </div>
+            <div class="col-md-3 mx-auto text-center">
+              <a href="#home">
+                <button type="button" class="btn btn-danger btn-lg">
+                  send message
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="container-icon">
+            <div class="col-md-4 text-center tim">
+              <div class="socisl-icon">
+                <a href="#" class="social"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+                <a href="https://www.instagram.com/nizh_14/" class="social"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" class="social"
                   ><i class="fa-brands fa-linkedin-in"></i
-                    ></a>
-                  <a
+                ></a>
+                <a
                   href="https://wa.me/6282220833878"
                   target="_blank"
                   class="social"
                   ><i class="fa-brands fa-whatsapp"></i
-                    ></a>
-                </p>
+                ></a>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-    </div>
-        </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
